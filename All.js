@@ -12,7 +12,7 @@ console.log(items);
             checked={list.complete}
             onChange={() => handleCheckbox(list.id)}
           />
-          <span className="itemName">{list.title}</span>
+          {list.complete === true ? <strike className="itemName">{list.title}</strike> : <span className="itemName">{list.title}</span>}
         </div>
       )})}
     </div>

@@ -33916,7 +33916,9 @@ function All(_ref) {
       onChange: function onChange() {
         return handleCheckbox(list.id);
       }
-    }), /*#__PURE__*/_react.default.createElement("span", {
+    }), list.complete === true ? /*#__PURE__*/_react.default.createElement("strike", {
+      className: "itemName"
+    }, list.title) : /*#__PURE__*/_react.default.createElement("span", {
       className: "itemName"
     }, list.title));
   }));
@@ -34273,7 +34275,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50815" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50583" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
