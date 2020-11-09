@@ -66,9 +66,9 @@ function App() {
       </header>
 
       <div className="links">
-        <Link to="/all">All</Link>
+        <Link to="/">All</Link>
         <Link to="/active">Active</Link>
-        <Link to="/">Completed</Link>
+        <Link to="/complete">Completed</Link>
       </div>
 
       <hr />
@@ -83,7 +83,7 @@ function App() {
       />
 
       <Switch>
-        <Route exact path="/all">
+        <Route exact path="/">
           <All
             items={items}
             data={data}
@@ -99,7 +99,7 @@ function App() {
             handleCheckbox={handleCheckbox}
           />
         </Route>
-        <Route path="/">
+        <Route path="/complete">
           <Completed
             items={items}
             setItems={setItems}

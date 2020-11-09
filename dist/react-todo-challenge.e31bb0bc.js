@@ -34193,11 +34193,11 @@ function App() {
   return /*#__PURE__*/_react.default.createElement("section", null, /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement("h2", null, "#Todo")), /*#__PURE__*/_react.default.createElement("div", {
     className: "links"
   }, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
-    to: "/all"
+    to: "/"
   }, "All"), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
     to: "/active"
   }, "Active"), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
-    to: "/"
+    to: "/complete"
   }, "Completed")), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement(_InputComponent.default, {
     items: items,
     data: data,
@@ -34207,7 +34207,7 @@ function App() {
     handleSubmit: handleSubmit
   }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Switch, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
     exact: true,
-    path: "/all"
+    path: "/"
   }, /*#__PURE__*/_react.default.createElement(_All.default, {
     items: items,
     data: data,
@@ -34222,7 +34222,7 @@ function App() {
     setItems: setItems,
     handleCheckbox: handleCheckbox
   })), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
-    path: "/"
+    path: "/complete"
   }, /*#__PURE__*/_react.default.createElement(_Completed.default, {
     items: items,
     setItems: setItems,
